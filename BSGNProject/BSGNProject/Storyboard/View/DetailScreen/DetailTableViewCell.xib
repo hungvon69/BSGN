@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="130" id="KGk-i7-Jjw" customClass="DetailTableViewCell" customModule="BSGNProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lzv-Wu-84Z">
+                        <rect key="frame" x="16" y="10" width="129" height="67"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Lzv-Wu-84Z" secondAttribute="height" multiplier="150:78" id="G0j-0F-QYR"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIi-oy-vUW">
+                        <rect key="frame" x="157" y="10" width="170" height="15.666666666666664"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V29-Bt-n77">
+                        <rect key="frame" x="157" y="29.666666666666671" width="31" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.49019607843137253" green="0.51764705882352935" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drN-OA-nGB">
+                        <rect key="frame" x="301" y="59.666666666666664" width="26" height="17.333333333333336"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="drN-OA-nGB" secondAttribute="height" multiplier="1.5" id="dJS-CI-hgh"/>
+                        </constraints>
+                        <color key="tintColor" red="0.58823529411764708" green="0.60784313725490191" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="">
+                            <backgroundConfiguration key="background"/>
+                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                        </buttonConfiguration>
+                        <connections>
+                            <action selector="didTapMarked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ldb-xB-ewN"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="V29-Bt-n77" firstAttribute="top" secondItem="cIi-oy-vUW" secondAttribute="bottom" constant="4" id="37X-qE-1i8"/>
+                    <constraint firstItem="cIi-oy-vUW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="5zW-so-bxL"/>
+                    <constraint firstItem="cIi-oy-vUW" firstAttribute="leading" secondItem="Lzv-Wu-84Z" secondAttribute="trailing" constant="12" id="7BP-Bv-kDy"/>
+                    <constraint firstAttribute="bottom" secondItem="Lzv-Wu-84Z" secondAttribute="bottom" constant="10" id="JvT-8z-ah0"/>
+                    <constraint firstItem="Lzv-Wu-84Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="MS4-jk-LaG"/>
+                    <constraint firstItem="Lzv-Wu-84Z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="UZg-sE-syr"/>
+                    <constraint firstAttribute="bottom" secondItem="drN-OA-nGB" secondAttribute="bottom" constant="10" id="VmC-wv-zD1"/>
+                    <constraint firstAttribute="trailing" secondItem="drN-OA-nGB" secondAttribute="trailing" constant="16" id="hJU-pl-vJ4"/>
+                    <constraint firstItem="V29-Bt-n77" firstAttribute="leading" secondItem="Lzv-Wu-84Z" secondAttribute="trailing" constant="12" id="jPL-c9-73V"/>
+                    <constraint firstItem="drN-OA-nGB" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.2" id="nsP-lG-NDP"/>
+                    <constraint firstAttribute="trailing" secondItem="cIi-oy-vUW" secondAttribute="trailing" constant="16" id="r0U-bh-onv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="detailCreatedLabel" destination="V29-Bt-n77" id="WGd-cZ-No0"/>
+                <outlet property="detailImageView" destination="Lzv-Wu-84Z" id="R7c-Qk-93u"/>
+                <outlet property="detailTitleLabel" destination="cIi-oy-vUW" id="395-nz-Xh4"/>
+                <outlet property="markButton" destination="drN-OA-nGB" id="cCR-I6-pzB"/>
+            </connections>
+            <point key="canvasLocation" x="-210" y="14"/>
+        </tableViewCell>
+    </objects>
+</document>

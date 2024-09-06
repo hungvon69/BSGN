@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>www.fvhospital.com</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>NunitoSans-Bold.ttf</string>
+		<string>NunitoSans-SemiBold.ttf</string>
+		<string>NunitoSans-ExtraLight.ttf</string>
+		<string>NunitoSans-Light.ttf</string>
+		<string>NunitoSans-Regular.ttf</string>
+		<string>NunitoSans_10pt-ExtraBold.ttf</string>
+		<string>NunitoSans_10pt-SemiBold.ttf</string>
+		<string>Nunito-VariableFont_wght.ttf</string>
+		<string>NunitoSans_10pt-Regular.ttf</string>
+		<string>NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf</string>
+		<string>Nunito-Black.ttf</string>
+		<string>Nunito-VariableFont_wght.ttf</string>
+		<string>Nunito-Italic-VariableFont_wght.ttf</string>
+	</array>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="BSGNProject" customModuleProvider="target">
+            <connections>
+                <outlet property="avatarImageView" destination="rgG-An-0Tg" id="RbO-hk-AqS"/>
+                <outlet property="homeTableView" destination="MIZ-9T-gEF" id="lni-3s-O7W"/>
+                <outlet property="infoButton" destination="rgG-An-0Tg" id="Ejj-9M-hAH"/>
+                <outlet property="nameAccLabel" destination="S92-bR-7O0" id="ick-Ay-d19"/>
+                <outlet property="personalImageView" destination="Hk6-Nv-h7B" id="fO1-Ah-ly6"/>
+                <outlet property="statusLabel" destination="boJ-ag-r7C" id="hcy-Ef-aye"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frame 45648" translatesAutoresizingMaskIntoConstraints="NO" id="Hk6-Nv-h7B">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="148.66666666666666"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="MIZ-9T-gEF">
+                    <rect key="frame" x="0.0" y="123.66666666666669" width="390" height="720.33333333333326"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phi Hùng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S92-bR-7O0">
+                    <rect key="frame" x="16.000000000000004" y="65.333333333333329" width="62.333333333333343" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đang trực tuyến" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boJ-ag-r7C">
+                    <rect key="frame" x="30" y="85.666666666666671" width="91" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOz-nf-WY2">
+                    <rect key="frame" x="16" y="89.333333333333329" width="8" height="8"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="HOz-nf-WY2" secondAttribute="height" multiplier="1:1" id="N0D-kT-DzC"/>
+                        <constraint firstAttribute="height" constant="8" id="Uva-ze-W78"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="Ellipse 96"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rgG-An-0Tg">
+                    <rect key="frame" x="332" y="65.333333333333329" width="42" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="3Le-eg-aTE"/>
+                        <constraint firstAttribute="width" secondItem="rgG-An-0Tg" secondAttribute="height" multiplier="1:1" id="Bp0-6x-yJR"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" backgroundImage="d"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <backgroundConfiguration key="background" cornerRadius="24" image="d" strokeWidth="1">
+                            <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </backgroundConfiguration>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="didTapInfo:" destination="-1" eventType="touchUpInside" id="bPI-SA-GPf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="MIZ-9T-gEF" firstAttribute="top" secondItem="Hk6-Nv-h7B" secondAttribute="bottom" constant="-25" id="3pr-AZ-BSu"/>
+                <constraint firstItem="rgG-An-0Tg" firstAttribute="top" secondItem="S92-bR-7O0" secondAttribute="top" id="6Dg-is-iJD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MIZ-9T-gEF" secondAttribute="trailing" id="6g1-ii-Il1"/>
+                <constraint firstItem="Hk6-Nv-h7B" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="A4c-f0-sos"/>
+                <constraint firstItem="MIZ-9T-gEF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="GMm-rd-jRN"/>
+                <constraint firstItem="Hk6-Nv-h7B" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="143:812" id="GkN-P6-yBP"/>
+                <constraint firstItem="Hk6-Nv-h7B" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="JWb-OO-gCv"/>
+                <constraint firstItem="boJ-ag-r7C" firstAttribute="centerY" secondItem="HOz-nf-WY2" secondAttribute="centerY" id="S3x-iI-bnO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Hk6-Nv-h7B" secondAttribute="trailing" id="Vfg-Jy-5vp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rgG-An-0Tg" secondAttribute="trailing" constant="16" id="Yza-4x-H0x"/>
+                <constraint firstItem="S92-bR-7O0" firstAttribute="centerY" secondItem="Hk6-Nv-h7B" secondAttribute="centerY" id="aCS-hj-d7O"/>
+                <constraint firstItem="HOz-nf-WY2" firstAttribute="leading" secondItem="S92-bR-7O0" secondAttribute="leading" id="fNy-Ey-dg9"/>
+                <constraint firstAttribute="bottom" secondItem="MIZ-9T-gEF" secondAttribute="bottom" id="j6e-so-zvn"/>
+                <constraint firstItem="HOz-nf-WY2" firstAttribute="top" secondItem="S92-bR-7O0" secondAttribute="bottom" constant="6" id="kXs-fr-oxe"/>
+                <constraint firstItem="boJ-ag-r7C" firstAttribute="leading" secondItem="HOz-nf-WY2" secondAttribute="trailing" constant="6" id="rwB-WS-W0q"/>
+                <constraint firstItem="S92-bR-7O0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="usb-yB-coG"/>
+            </constraints>
+            <point key="canvasLocation" x="-198.46153846153845" y="-73.222748815165872"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Ellipse 96" width="8" height="8"/>
+        <image name="Frame 45648" width="375" height="143"/>
+        <image name="d" width="517" height="517"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

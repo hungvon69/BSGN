@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailWebViewController" customModule="BSGNProject" customModuleProvider="target">
+            <connections>
+                <outlet property="detailNavigationBar" destination="cZK-PE-cAr" id="Y7q-Ju-WpZ"/>
+                <outlet property="loadingIndicator" destination="bvS-hm-MZF" id="iiz-NV-vWQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="A2v-u1-O12" id="K9X-on-C5Y"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cZK-PE-cAr">
+                    <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                    <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <items>
+                        <navigationItem title="Title" id="Pe2-w4-AwS"/>
+                    </items>
+                </navigationBar>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A2v-u1-O12">
+                    <rect key="frame" x="0.0" y="91" width="390" height="753"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="bvS-hm-MZF">
+                    <rect key="frame" x="185" y="457.66666666666669" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="b35-yQ-T6i"/>
+                        <constraint firstAttribute="width" constant="20" id="p1r-i0-ZL2"/>
+                    </constraints>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="bvS-hm-MZF" firstAttribute="centerX" secondItem="A2v-u1-O12" secondAttribute="centerX" id="3HP-mG-Gdc"/>
+                <constraint firstAttribute="trailing" secondItem="cZK-PE-cAr" secondAttribute="trailing" id="Ico-CZ-3LR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="A2v-u1-O12" secondAttribute="trailing" id="Ru0-oc-hKp"/>
+                <constraint firstItem="A2v-u1-O12" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="W73-qz-ndJ"/>
+                <constraint firstItem="bvS-hm-MZF" firstAttribute="centerY" secondItem="A2v-u1-O12" secondAttribute="centerY" id="YGP-wC-aj3"/>
+                <constraint firstItem="cZK-PE-cAr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gJh-qF-PcP"/>
+                <constraint firstAttribute="bottom" secondItem="A2v-u1-O12" secondAttribute="bottom" id="kqC-DN-zC6"/>
+                <constraint firstItem="A2v-u1-O12" firstAttribute="top" secondItem="cZK-PE-cAr" secondAttribute="bottom" id="oav-ga-Lsf"/>
+                <constraint firstItem="cZK-PE-cAr" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="rYt-DK-hSb"/>
+            </constraints>
+            <point key="canvasLocation" x="37" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
