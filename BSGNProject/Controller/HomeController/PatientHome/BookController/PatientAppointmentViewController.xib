@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PatientAppointmentViewController" customModule="BSGNProject" customModuleProvider="target">
+            <connections>
+                <outlet property="avatarImageView" destination="yal-VR-mst" id="s00-HT-noZ"/>
+                <outlet property="cancelButton" destination="dpl-v1-fml" id="DFh-it-OFE"/>
+                <outlet property="doctorLb" destination="rdg-Eu-Lx8" id="mdo-nh-MQc"/>
+                <outlet property="graduatedLabel" destination="GjU-Ff-wrT" id="OFG-NF-7ZP"/>
+                <outlet property="majorLabel" destination="FRc-eD-E9N" id="KAy-z8-aHb"/>
+                <outlet property="nameLabel" destination="7ev-4G-xMb" id="hrL-iK-1Wk"/>
+                <outlet property="phoneNumberLabel" destination="r8q-df-zQc" id="1RH-1I-99p"/>
+                <outlet property="priceLabel" destination="fRu-DA-JBM" id="bTc-mM-J8m"/>
+                <outlet property="symtomsLabel" destination="AjA-kG-2fB" id="Sxc-Fw-TFE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="waitingImageView" destination="pIf-g8-bup" id="aVb-MF-hbI"/>
+                <outlet property="waitingLabel" destination="L1c-Xu-q2D" id="U5C-KM-RBn"/>
+                <outlet property="workLabel" destination="dpX-qm-9nF" id="caW-XJ-M83"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.bust.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="yal-VR-mst">
+                    <rect key="frame" x="136.66666666666666" y="85" width="119.99999999999997" height="118.66666666666669"/>
+                    <color key="backgroundColor" red="0.69702145800000004" green="0.91769235449999997" blue="0.96841150519999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="tintColor" name="MajorColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="BaG-Cb-q8c"/>
+                        <constraint firstAttribute="width" secondItem="yal-VR-mst" secondAttribute="height" id="q3l-zm-cRE"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="_cornerRadius">
+                            <real key="value" value="60"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bác sỹ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdg-Eu-Lx8">
+                    <rect key="frame" x="171" y="224" width="51" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tào Văn Phớ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ev-4G-xMb">
+                    <rect key="frame" x="139.66666666666666" y="255.00000000000003" width="113.66666666666666" height="25.333333333333343"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <color key="textColor" name="MajorColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chuyên ngành:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRc-eD-E9N">
+                    <rect key="frame" x="30" y="310.33333333333331" width="333" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tốt Nghiệp:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GjU-Ff-wrT">
+                    <rect key="frame" x="30" y="361.33333333333331" width="333" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nơi làm việc:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpX-qm-9nF">
+                    <rect key="frame" x="30" y="412.33333333333331" width="333" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giá khám:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRu-DA-JBM">
+                    <rect key="frame" x="30" y="463.33333333333331" width="333" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpl-v1-fml">
+                    <rect key="frame" x="30" y="749" width="333" height="39"/>
+                    <color key="tintColor" systemColor="systemRedColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Hủy cuộc hẹn">
+                        <backgroundConfiguration key="background" strokeWidth="2">
+                            <color key="strokeColor" systemColor="systemRedColor"/>
+                        </backgroundConfiguration>
+                    </buttonConfiguration>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_doctor" translatesAutoresizingMaskIntoConstraints="NO" id="pIf-g8-bup">
+                    <rect key="frame" x="136.66666666666666" y="378.66666666666669" width="119.99999999999997" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="hKh-N6-cVY"/>
+                        <constraint firstAttribute="width" constant="120" id="i1v-b5-6I1"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1c-Xu-q2D">
+                    <rect key="frame" x="20" y="518.66666666666663" width="353" height="46.666666666666629"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Vui lòng chờ đến khi có 1 bác sỹ phù hợp nhận cuộc hẹn của bạn">
+                            <attributes>
+                                <font key="NSFont" size="17" name="Avenir-Heavy"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <color key="highlightedColor" systemColor="systemGreenColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Số điện thoại:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8q-df-zQc">
+                    <rect key="frame" x="30" y="504.33333333333326" width="333" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Triệu chứng của bạn:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AjA-kG-2fB">
+                    <rect key="frame" x="30" y="545.33333333333337" width="333" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="r8q-df-zQc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="2Cs-h4-G7z"/>
+                <constraint firstItem="GjU-Ff-wrT" firstAttribute="top" secondItem="FRc-eD-E9N" secondAttribute="bottom" constant="30" id="4Le-HQ-Euu"/>
+                <constraint firstItem="L1c-Xu-q2D" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="4RD-jA-ZeL"/>
+                <constraint firstItem="GjU-Ff-wrT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="5Da-us-xXg"/>
+                <constraint firstItem="7ev-4G-xMb" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="7S0-Vn-vSy"/>
+                <constraint firstItem="rdg-Eu-Lx8" firstAttribute="top" secondItem="yal-VR-mst" secondAttribute="bottom" constant="20" id="8ay-E8-4kB"/>
+                <constraint firstItem="fRu-DA-JBM" firstAttribute="top" secondItem="dpX-qm-9nF" secondAttribute="bottom" constant="30" id="AZy-K8-1Jv"/>
+                <constraint firstItem="rdg-Eu-Lx8" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Cw3-Je-2RB"/>
+                <constraint firstItem="fRu-DA-JBM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="EFJ-wA-K3J"/>
+                <constraint firstItem="AjA-kG-2fB" firstAttribute="top" secondItem="r8q-df-zQc" secondAttribute="bottom" constant="20" id="Fp9-2T-pay"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FRc-eD-E9N" secondAttribute="trailing" constant="30" id="Fqt-mg-rTq"/>
+                <constraint firstItem="dpX-qm-9nF" firstAttribute="top" secondItem="GjU-Ff-wrT" secondAttribute="bottom" constant="30" id="IVp-a0-rAM"/>
+                <constraint firstItem="FRc-eD-E9N" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="J2Y-pL-NZ5"/>
+                <constraint firstItem="dpX-qm-9nF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="KhZ-nP-mWm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dpl-v1-fml" secondAttribute="bottom" constant="30" id="QBo-cO-z2m"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dpl-v1-fml" secondAttribute="trailing" constant="30" id="R1g-Ce-hfP"/>
+                <constraint firstItem="pIf-g8-bup" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="SFn-NQ-tby"/>
+                <constraint firstItem="AjA-kG-2fB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Scz-o7-LFL"/>
+                <constraint firstItem="r8q-df-zQc" firstAttribute="top" secondItem="fRu-DA-JBM" secondAttribute="bottom" constant="20" id="U2v-SI-LGS"/>
+                <constraint firstItem="L1c-Xu-q2D" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Xoa-7M-GRe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AjA-kG-2fB" secondAttribute="trailing" constant="30" id="Z7J-m5-lMU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GjU-Ff-wrT" secondAttribute="trailing" constant="30" id="aWm-7c-LhM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="r8q-df-zQc" secondAttribute="trailing" constant="30" id="bVb-bx-xpU"/>
+                <constraint firstItem="7ev-4G-xMb" firstAttribute="top" secondItem="rdg-Eu-Lx8" secondAttribute="bottom" constant="10" id="hBW-VO-NwR"/>
+                <constraint firstItem="pIf-g8-bup" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="hsJ-31-KYc"/>
+                <constraint firstItem="yal-VR-mst" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="hya-mg-qN4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dpX-qm-9nF" secondAttribute="trailing" constant="30" id="ioi-vT-dh9"/>
+                <constraint firstItem="L1c-Xu-q2D" firstAttribute="top" secondItem="pIf-g8-bup" secondAttribute="bottom" constant="20" id="k6M-MS-vMJ"/>
+                <constraint firstItem="FRc-eD-E9N" firstAttribute="top" secondItem="7ev-4G-xMb" secondAttribute="bottom" constant="30" id="lb8-N5-6UC"/>
+                <constraint firstItem="yal-VR-mst" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rcS-62-612"/>
+                <constraint firstItem="dpl-v1-fml" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="uQ3-0h-EmC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fRu-DA-JBM" secondAttribute="trailing" constant="30" id="x8P-hG-k2f"/>
+            </constraints>
+            <point key="canvasLocation" x="119.84732824427481" y="-96.478873239436624"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="default_doctor" width="32.333332061767578" height="32.333332061767578"/>
+        <image name="person.bust.circle" catalog="system" width="128" height="123"/>
+        <namedColor name="MajorColor">
+            <color red="0.17254901960784313" green="0.52549019607843139" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DoctorCollectionViewCell" customModule="BSGNProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="121" height="192"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="121" height="192"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hHK-ov-aH2">
+                        <rect key="frame" x="12" y="12" width="97" height="97"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="hHK-ov-aH2" secondAttribute="height" id="gTB-k1-CdQ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KfA-cB-5Bx">
+                        <rect key="frame" x="12" y="121" width="33" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgJ-Cf-Hcc">
+                        <rect key="frame" x="12" y="140" width="31" height="14"/>
+                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
+                        <color key="textColor" red="0.58823529411764708" green="0.60784313725490191" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUM-3I-LAr">
+                        <rect key="frame" x="32" y="165" width="29" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opP-j9-hAL">
+                        <rect key="frame" x="63" y="165" width="29" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.58823529411764708" green="0.60784313725490191" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gvc-pE-9WM">
+                        <rect key="frame" x="12" y="163.66666666666666" width="16" height="15.666666666666657"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Gvc-pE-9WM" secondAttribute="height" multiplier="1:1" id="Dxn-f1-Krc"/>
+                            <constraint firstAttribute="height" constant="16" id="GOQ-eV-Xa0"/>
+                            <constraint firstAttribute="width" constant="16" id="U4X-uf-01W"/>
+                        </constraints>
+                        <color key="tintColor" red="1" green="0.82352941176470584" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" backgroundImage="star.fill" catalog="system"/>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Gvc-pE-9WM" secondAttribute="bottom" constant="12" id="1u9-pO-wEM"/>
+                <constraint firstItem="KfA-cB-5Bx" firstAttribute="top" secondItem="hHK-ov-aH2" secondAttribute="bottom" constant="12" id="3KJ-tv-ZaK"/>
+                <constraint firstItem="opP-j9-hAL" firstAttribute="centerY" secondItem="Gvc-pE-9WM" secondAttribute="centerY" id="5Bi-XS-xeX"/>
+                <constraint firstItem="bUM-3I-LAr" firstAttribute="centerY" secondItem="Gvc-pE-9WM" secondAttribute="centerY" id="AbC-N3-Q6R"/>
+                <constraint firstItem="KfA-cB-5Bx" firstAttribute="leading" secondItem="hHK-ov-aH2" secondAttribute="leading" id="Fm9-KM-ADW"/>
+                <constraint firstItem="hHK-ov-aH2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="Mve-no-q3B"/>
+                <constraint firstItem="bUM-3I-LAr" firstAttribute="leading" secondItem="Gvc-pE-9WM" secondAttribute="trailing" constant="4" id="T5Z-LU-EJz"/>
+                <constraint firstItem="opP-j9-hAL" firstAttribute="leading" secondItem="bUM-3I-LAr" secondAttribute="trailing" constant="2" id="T6C-2f-3w1"/>
+                <constraint firstItem="Gvc-pE-9WM" firstAttribute="leading" secondItem="hgJ-Cf-Hcc" secondAttribute="leading" id="bUY-OA-n0H"/>
+                <constraint firstItem="hgJ-Cf-Hcc" firstAttribute="top" secondItem="KfA-cB-5Bx" secondAttribute="bottom" constant="4" id="fCD-Lm-MMl"/>
+                <constraint firstItem="hHK-ov-aH2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="hVx-4Q-9Hr"/>
+                <constraint firstAttribute="trailing" secondItem="hHK-ov-aH2" secondAttribute="trailing" constant="12" id="kva-OR-Buh"/>
+                <constraint firstItem="hgJ-Cf-Hcc" firstAttribute="leading" secondItem="KfA-cB-5Bx" secondAttribute="leading" id="wRn-6e-ko9"/>
+            </constraints>
+            <size key="customSize" width="122" height="192"/>
+            <connections>
+                <outlet property="doctorImageVIew" destination="hHK-ov-aH2" id="IXX-lf-uMM"/>
+                <outlet property="doctorNameLabel" destination="KfA-cB-5Bx" id="Gzl-re-e7h"/>
+                <outlet property="majorNameLabel" destination="hgJ-Cf-Hcc" id="jXt-eB-l2q"/>
+                <outlet property="reviewerCountLabel" destination="opP-j9-hAL" id="CJw-0a-R6a"/>
+                <outlet property="starLabel" destination="bUM-3I-LAr" id="HCB-UL-SNV"/>
+            </connections>
+            <point key="canvasLocation" x="97.692307692307693" y="36.96682464454976"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+    </resources>
+</document>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="ChooseTableViewCell" customModule="BSGNProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="327" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="327" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1lj-HS-BPk">
+                        <rect key="frame" x="24" y="26" width="279" height="45"/>
+                        <segments>
+                            <segment title="Nam"/>
+                            <segment title="Nữ"/>
+                        </segments>
+                        <color key="tintColor" name="MajorColor"/>
+                    </segmentedControl>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giới tính" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mo1-bl-jof">
+                        <rect key="frame" x="24" y="0.0" width="50" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.58823529411764708" green="0.60784313725490191" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1lj-HS-BPk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="1QS-XY-2ME"/>
+                    <constraint firstItem="1lj-HS-BPk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="26" id="Fli-Bv-Arb"/>
+                    <constraint firstItem="Mo1-bl-jof" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="bHY-hL-FKn"/>
+                    <constraint firstAttribute="bottom" secondItem="1lj-HS-BPk" secondAttribute="bottom" id="mb1-m1-3bz"/>
+                    <constraint firstItem="Mo1-bl-jof" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="nz3-yn-NIC"/>
+                    <constraint firstAttribute="trailing" secondItem="1lj-HS-BPk" secondAttribute="trailing" constant="24" id="toq-lW-lW4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="chooseLabel" destination="Mo1-bl-jof" id="Ir7-we-lKj"/>
+                <outlet property="chooseSegment" destination="1lj-HS-BPk" id="K12-yp-g64"/>
+            </connections>
+            <point key="canvasLocation" x="45" y="-11"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="MajorColor">
+            <color red="0.17254901960784313" green="0.52549019607843139" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

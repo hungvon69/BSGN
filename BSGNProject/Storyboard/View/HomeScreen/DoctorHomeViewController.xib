@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DoctorHomeViewController" customModule="BSGNProject" customModuleProvider="target">
+            <connections>
+                <outlet property="doctorHomeTableView" destination="lgP-n3-iGf" id="iQu-zW-aEm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lgP-n3-iGf">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frame 45647" translatesAutoresizingMaskIntoConstraints="NO" id="8M3-lK-veG">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="yU1-mX-Y9u"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="lgP-n3-iGf" secondAttribute="bottom" id="D21-Uw-9vR"/>
+                <constraint firstItem="lgP-n3-iGf" firstAttribute="top" secondItem="8M3-lK-veG" secondAttribute="bottom" id="HSP-oR-xpS"/>
+                <constraint firstItem="lgP-n3-iGf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ncg-kL-9FH"/>
+                <constraint firstItem="8M3-lK-veG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="brG-Wm-sW3"/>
+                <constraint firstItem="8M3-lK-veG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fJK-2k-oZ6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8M3-lK-veG" secondAttribute="trailing" id="v33-f4-7xi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lgP-n3-iGf" secondAttribute="trailing" id="xaJ-sH-bYk"/>
+            </constraints>
+            <point key="canvasLocation" x="61.832061068702288" y="-39.436619718309863"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Frame 45647" width="375" height="143"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

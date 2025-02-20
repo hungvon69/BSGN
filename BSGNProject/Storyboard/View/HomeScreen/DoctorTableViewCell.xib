@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="210" id="KGk-i7-Jjw" customClass="DoctorTableViewCell" customModule="BSGNProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="223"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="223"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9z4-0v-Hg9">
+                        <rect key="frame" x="221.33333333333334" y="0.0" width="98.666666666666657" height="34.333333333333336"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" imagePadding="2">
+                            <imageReference key="image" image="chevron.right" catalog="system" symbolScale="small"/>
+                            <attributedString key="attributedTitle">
+                                <fragment content="Xem t">
+                                    <attributes>
+                                        <font key="NSFont" size="13" name="BrushScriptMT"/>
+                                        <font key="NSOriginalFont" size="13" name="Webdings"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="ấ">
+                                    <attributes>
+                                        <font key="NSFont" size="13" name="BrushScriptMT"/>
+                                        <font key="NSOriginalFont" size="13" name="ComicSansMS-Bold"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="t c">
+                                    <attributes>
+                                        <font key="NSFont" size="13" name="BrushScriptMT"/>
+                                        <font key="NSOriginalFont" size="13" name="Webdings"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="ả">
+                                    <attributes>
+                                        <font key="NSFont" size="13" name="BrushScriptMT"/>
+                                        <font key="NSOriginalFont" size="13" name="ComicSansMS-Bold"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <color key="baseForegroundColor" name="MajorColor"/>
+                        </buttonConfiguration>
+                        <connections>
+                            <action selector="didTapSeeAll:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2UT-a9-1lc"/>
+                        </connections>
+                    </button>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="q46-an-K25">
+                        <rect key="frame" x="0.0" y="38" width="320" height="185"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tGj-km-1yL">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="paG-it-YjH">
+                        <rect key="frame" x="16.000000000000007" y="0.0" width="120.66666666666669" height="34.333333333333336"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Giới thiệu bác sĩ">
+                                <attributes>
+                                    <font key="NSFont" metaFont="system" size="17"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <color key="highlightedColor" red="0.14117647059999999" green="0.1647058824" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="q46-an-K25" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="38" id="7Rq-67-Kg2"/>
+                    <constraint firstAttribute="bottom" secondItem="q46-an-K25" secondAttribute="bottom" id="92I-Md-9id"/>
+                    <constraint firstItem="q46-an-K25" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="97y-en-O68"/>
+                    <constraint firstItem="9z4-0v-Hg9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="MlC-GL-JYc"/>
+                    <constraint firstAttribute="trailing" secondItem="9z4-0v-Hg9" secondAttribute="trailing" id="WIX-N2-QnT"/>
+                    <constraint firstItem="9z4-0v-Hg9" firstAttribute="centerY" secondItem="paG-it-YjH" secondAttribute="centerY" id="jhV-6l-QQx"/>
+                    <constraint firstItem="paG-it-YjH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="pwU-Tt-a18"/>
+                    <constraint firstItem="paG-it-YjH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="twV-LH-l4f"/>
+                    <constraint firstAttribute="trailing" secondItem="q46-an-K25" secondAttribute="trailing" id="vSI-6l-HAV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="doctorCollectionView" destination="q46-an-K25" id="cPq-8r-Z5N"/>
+                <outlet property="kindOfNameLabel" destination="paG-it-YjH" id="z1w-IC-fzO"/>
+                <outlet property="seeAllButton" destination="9z4-0v-Hg9" id="RTI-Kp-L7o"/>
+            </connections>
+            <point key="canvasLocation" x="146" y="17"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chevron.right" catalog="system" width="97" height="128"/>
+        <namedColor name="MajorColor">
+            <color red="0.17254901960784313" green="0.52549019607843139" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

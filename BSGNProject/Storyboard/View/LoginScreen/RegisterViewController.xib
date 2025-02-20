@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="BSGNProject" customModuleProvider="target">
+            <connections>
+                <outlet property="continueButton" destination="dc1-B2-zH2" id="cua-az-Nh0"/>
+                <outlet property="roleSegmentControl" destination="sA0-sH-HGY" id="PYE-5Y-xxL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="c6H-7t-Kc9">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="196"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="c6H-7t-Kc9" secondAttribute="height" multiplier="393:196" id="OE6-XU-TYz"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGf-Fq-euj">
+                    <rect key="frame" x="0.0" y="226" width="393" height="28"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Bạn là:">
+                            <attributes>
+                                <font key="NSFont" size="25" name="Arial-BoldMT"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="sA0-sH-HGY">
+                    <rect key="frame" x="70" y="304" width="253" height="32"/>
+                    <segments>
+                        <segment title="Bệnh nhân"/>
+                        <segment title="Bác sĩ"/>
+                    </segments>
+                    <color key="selectedSegmentTintColor" name="MajorColor"/>
+                </segmentedControl>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dc1-B2-zH2">
+                    <rect key="frame" x="24" y="405" width="345" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="55a-cS-utM"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Tiếp tục">
+                        <backgroundConfiguration key="background" cornerRadius="24">
+                            <color key="backgroundColor" name="MajorColor"/>
+                        </backgroundConfiguration>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="didTapContinue:" destination="-1" eventType="touchUpInside" id="7Ad-h1-Y4n"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="dc1-B2-zH2" firstAttribute="top" secondItem="sA0-sH-HGY" secondAttribute="bottom" constant="70" id="1OO-Lk-egd"/>
+                <constraint firstItem="bGf-Fq-euj" firstAttribute="top" secondItem="c6H-7t-Kc9" secondAttribute="bottom" constant="30" id="8jB-7u-9Dv"/>
+                <constraint firstItem="sA0-sH-HGY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="70" id="BML-FJ-zT0"/>
+                <constraint firstItem="bGf-Fq-euj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="JuY-lK-nKk"/>
+                <constraint firstItem="dc1-B2-zH2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="OEd-Se-RmZ"/>
+                <constraint firstItem="c6H-7t-Kc9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="c7j-Y8-Nva"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bGf-Fq-euj" secondAttribute="trailing" id="g1A-sH-Cka"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dc1-B2-zH2" secondAttribute="trailing" constant="24" id="lBP-Gf-pS2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="c6H-7t-Kc9" secondAttribute="trailing" id="lj5-3P-4J2"/>
+                <constraint firstItem="c6H-7t-Kc9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lm1-oY-66N"/>
+                <constraint firstItem="sA0-sH-HGY" firstAttribute="top" secondItem="bGf-Fq-euj" secondAttribute="bottom" constant="50" id="mHD-4b-amm"/>
+                <constraint firstItem="bGf-Fq-euj" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="oLX-gP-079"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sA0-sH-HGY" secondAttribute="trailing" constant="70" id="zAj-oP-5fd"/>
+            </constraints>
+            <point key="canvasLocation" x="11.450381679389313" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BG" width="375" height="188"/>
+        <namedColor name="MajorColor">
+            <color red="0.17254901960784313" green="0.52549019607843139" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
